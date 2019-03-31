@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+console.log("Generating colors...")
 let colors = []
 for (let r = 0; r < 256; r++) {
     for (let g = 0; g < 256; g++) {
@@ -9,6 +10,7 @@ for (let r = 0; r < 256; r++) {
     }
 }
 
+console.log("Writing file...")
 fs.writeFile("./back/colors.json", JSON.stringify(colors), (err) => {
     if (err) {
         return console.log(err);
