@@ -1,0 +1,16 @@
+{
+  "name": "kolors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "back.js",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"node --max-old-space-size=4096 ./back/back.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
